@@ -1,0 +1,244 @@
+.navhover:hover{
+   background:linear-gradient(to right, rgb(73, 237, 255),rgb(0, 60, 99));
+}
+.navhover:active{
+   background:linear-gradient(to left, rgb(73, 237, 255),rgb(0, 60, 99));
+}
+.navhover:hover .navbar>a{
+    color: black;
+    
+}
+/* #photo-size{
+    animation: opac 5s linear;
+}
+@keyframes opac {
+    0%{
+        opacity: 10%;
+    }
+    20%{
+        opacity: 20%;
+    }
+    35%{
+        opacity: 30%;
+    }
+    45%{
+        opacity: 40%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    60%{
+        opacity: 60%;
+    }
+    70%{
+        opacity: 70%;
+    }
+    80%{
+        opacity: 80%;
+    }
+    90%{
+        opacity: 90%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+} */
+#icons>a{
+    color: white;
+    text-decoration: none;
+}
+.fa-hov:hover{
+    background-color: rgb(255, 196, 0);
+    box-shadow: 0px 0px 5px rgb(255, 196, 0);
+}
+#pht{
+    border-radius: 50%;
+    background: conic-gradient(rgb(73, 237, 255) 0deg, rgb(73, 237, 255) 90deg,rgb(0, 60, 99) 90deg,rgb(0, 60, 99) 180deg,rgb(73, 237, 255) 180deg,rgb(73, 237, 255) 270deg, rgb(0, 60, 99) 270deg);
+
+}
+.card-design{
+    box-shadow: 0px 0px 7px white;
+    border-radius: 0px 50px 0px 50px;
+    transition: .5s ease;
+}
+.card-design:hover{
+    color: black !important;
+    background-color: white !important;
+    transform: translateY(-20px) !important;   
+} 
+.project-card{
+    transition: .5s ease;
+    position: relative;
+}
+.btn-position{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0%;
+    transition: .5s ease;
+}
+.project-card:hover{
+    transform: translateY(-10px) !important;   
+}
+.project-card:hover .btn-position{
+    opacity: 100%;
+}
+.project-card>img{
+    border:1px solid white;
+    box-shadow: 0px 0px 7px white;
+    border-radius: 20px;
+}
+#contact{
+    box-shadow: 0px 0px 10px white;
+    border-radius: 10px;
+}
+#floatingTextarea{
+   height: 200px;
+}
+.roles{
+    /* position: relative; */
+    height: 40px;
+    overflow: hidden;
+}
+.role{
+    display: block;
+    height: 100%;
+    animation: change 10s infinite ;
+}
+.line{
+    height: 400px;
+    position: relative;
+}
+.dot1{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left:-10px;
+    top: 40px;
+}
+.dot2{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left:-10px;
+    top: 170px;
+}
+.dot3{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left:-10px;
+    top: 300px;
+}
+.flag{
+    font-size: 30px;
+    position: absolute;
+    top: -20px;
+    left: -2px;
+}
+.inf1{
+    position: absolute;
+    left: 30px;
+    top: 37px;
+}
+.inf2{
+    position: absolute;
+    left: 30px;
+    top: 167px;
+}
+.inf3{
+    position: absolute;
+    left: 30px;
+    top: 297px;
+}
+.ski{
+    transition: 1s ease;
+    cursor: pointer;
+}
+.ski:hover{
+    transform: scale(1.1);
+}
+.sk:hover .ski:not(:hover){
+    transform: scale(0.9);
+    filter: blur(2px);
+}
+h1, h2, h3, h4 , h5, h6{
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+@keyframes change {
+    20%{
+        transform: translateY(-40px);
+    }
+    40%{
+        transform: translateY(-80px);
+    }
+    60%{
+        transform: translateY(-120px);
+    }
+    80%{
+        transform: translateY(-160px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.img12{
+    height: 150px;
+    width: 150px;
+}
+.shdw{
+    box-shadow: 0px 0px 10px goldenrod !important;
+    border-left: 7px solid goldenrod;
+}
+@media (max-width:576px) 
+{
+    .card{
+        height: 100%;
+        width: 100%;
+    }
+    .project-card{
+        height: 100%;
+        width: 100%;
+    }
+    .img12{
+        height: 80%;
+        width: 80%;
+        
+    }
+    .skil{
+        display: none;
+    }
+    .col-6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media (max-width:768px) {
+    .cen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .edu-photo{
+    display: none !important;
+   }
+   
+}
+@media (max-width:368px) {
+   .txt{
+    font-size: 15px;
+   }
+   
+}
