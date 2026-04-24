@@ -199,6 +199,20 @@ p{
     box-shadow: 0px 0px 10px goldenrod !important;
     border-left: 7px solid goldenrod;
 }
+.nav2 li .active {
+        background-color: gold !important;
+        color: black !important;
+    }
+
+    .nav2-link {
+        background-color: white !important;
+        color: black;
+        transition: .3s ease;
+    }
+
+    .nav2-link:hover {
+        transform: translateY(-5px);
+    }
 @media (max-width:576px) 
 {
     .card{
@@ -214,9 +228,9 @@ p{
         width: 80%;
         
     }
-    .skil{
+    /* .skil{
         display: none;
-    }
+    } */
     .col-6{
         display: flex;
         justify-content: center;

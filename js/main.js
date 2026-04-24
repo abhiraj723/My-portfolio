@@ -1,5 +1,6 @@
 
 const up = document.getElementById("up");
+const sk2 = document.getElementById("sk2");
 
 window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY;
@@ -19,4 +20,5 @@ window.addEventListener("scroll", () => {
 //         behavior: "smooth"
 //     });
 // });
+
 
