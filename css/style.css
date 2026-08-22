@@ -94,6 +94,27 @@
     box-shadow: 0px 0px 10px white;
     border-radius: 10px;
 }
+.contact-success{
+    box-shadow: 0px 0px 10px goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+}
+.success-icon{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffc107;
+    border-radius: 50%;
+    color: #ffc107;
+    font-size: 28px;
+    animation: success-pop .35s ease-out;
+}
+@keyframes success-pop{
+    from{ transform: scale(.65); opacity: 0; }
+    to{ transform: scale(1); opacity: 1; }
+}
 #floatingTextarea{
    height: 200px;
 }
